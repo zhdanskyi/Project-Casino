@@ -141,6 +141,7 @@ body {
 /* Botón No (Cyan) */
 .neon-cyan {
   border: 2px solid #00e5ff; /* Ajusta al cyan de tu diseño */
+  color: #00e5ff;
   box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
 }
 
