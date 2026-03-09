@@ -63,6 +63,93 @@ body {
 }
 
 /* =========================================
+   VERIFICACION EDAD
+   ========================================= */
+/* --- OVERLAY QUE BLOQUEA LA PANTALLA --- */
+.age-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(11, 12, 16, 0.95); /* Color oscuro de fondo casi opaco */
+  display: none; /* Lo ocultamos por defecto, el JS decidirá si mostrarlo */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que esté por encima de todo */
+  backdrop-filter: blur(8px); /* Difumina el fondo del casino */
+}
+
+/* --- CAJA DEL MODAL --- */
+.age-modal {
+  background-color: #0b0c10;
+  padding: 50px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 650px;
+  border: 1px solid #1f2833;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.age-modal h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.age-modal p {
+  color: #c5c6c7;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* --- BOTONES NEÓN --- */
+.age-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap; /* Por si se ve en móviles que se adapte bien */
+}
+
+.neon-btn {
+  background: transparent;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Botón Sí (Amarillo) */
+.neon-yellow {
+  border: 2px solid #ffcc00; /* Ajusta este código de color al amarillo de tu logo */
+  color: #ffcc00;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
+}
+
+.neon-yellow:hover {
+  background-color: rgba(255, 204, 0, 0.1);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5), inset 0 0 10px rgba(255, 204, 0, 0.2);
+}
+
+/* Botón No (Cyan) */
+.neon-cyan {
+  border: 2px solid #00e5ff; /* Ajusta al cyan de tu diseño */
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+}
+
+.neon-cyan:hover {
+  background-color: rgba(0, 229, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5), inset 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+/* =========================================
    NAVBAR
    ========================================= */
 .navbar {

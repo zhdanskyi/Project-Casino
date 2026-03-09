@@ -10,6 +10,18 @@
 
 <body>
 
+  <div id="age-modal-overlay" class="age-overlay">
+  <div class="age-modal">
+    <h2>CONFIRMACIÓN DE EDAD</h2>
+    <p>Por favor, confirma que tienes 18 años o más para acceder a The Neon Experience. El juego responsable es nuestra prioridad y este sitio es solo para adultos.</p>
+    
+    <div class="age-buttons">
+      <button id="btn-yes" class="neon-btn neon-yellow">TENGO 18 AÑOS O MÁS</button>
+      <button id="btn-no" class="neon-btn neon-cyan">SOY MENOR DE 18 AÑOS</button>
+    </div>
+  </div>
+</div>
+
   <!-- Background SVG Animation Layer -->
   <div class="bg-animation-container" id="bg-canvas">
     <!-- SVG shapes generated via JS -->
@@ -122,6 +134,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <!-- Languages Script -->
   <script src="languages/languages.js"></script>
+
+  <script src="logic/verification.js"></script>
 
   <script>
     // Utility function: Split text into letters wrapped in spans
