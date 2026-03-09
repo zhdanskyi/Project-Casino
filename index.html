@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Casino | The Anime.js Homage</title>
+  <title>Project Casino | Casino Royale</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,14 +23,17 @@
 </div>
 
   <!-- Background SVG Animation Layer -->
+
+  <!-- capa de animacion de fondo -->
+
   <div class="bg-animation-container" id="bg-canvas">
-    <!-- SVG shapes generated via JS -->
+    <!-- formas svg generadas por js -->
   </div>
 
   <nav class="navbar">
     <div class="logo-container">
       <svg class="logo-svg" viewBox="0 0 100 100">
-        <!-- Diamond -> Chip -> Spade morph concept -->
+        <!-- concepto morph de diamante a pica -->
         <path class="logo-path" d="M50 10 L90 50 L50 90 L10 50 Z"></path>
       </svg>
       <div class="logo-text" id="logo-text" data-i18n="nav.logo">CASINO</div>
@@ -51,20 +54,20 @@
   </nav>
 
   <main class="hero">
-    <h1 class="hero-title" id="hero-title" data-i18n="hero.title">THE NEON EXPERIENCE</h1>
+    <h1 class="hero-title" id="hero-title" data-i18n="hero.title">LA EXPERIENCIA ROYALE</h1>
     <p class="hero-subtitle" id="hero-subtitle" data-i18n="hero.subtitle">
-      A showcase of fluid motion, SVG mapping, and exact parameter orchestration. Pure dynamic minimalism.
+      una exhibicion de extravagancia, detalles dorados y animaciones fisicas realistas. luxuria pura.
     </p>
 
     <div class="btn-wrapper" id="main-play-btn">
       <svg class="btn-svg" viewBox="0 0 200 60" preserveAspectRatio="none">
         <rect width="100%" height="100%" />
       </svg>
-      <div class="btn-text-content" id="btn-text" data-i18n="hero.btn.play" data-href="#lobby">INITIALIZE</div>
+      <div class="btn-text-content" id="btn-text" data-i18n="hero.btn.play" data-href="#lobby">ENTRAR</div>
     </div>
   </main>
 
-  <!-- Game Cards Grid -->
+  <!-- cuadricula de tarjetas de juego -->
   <div class="grid-container" id="lobby">
 
     <a href="model/roulette.html" class="game-card-wrapper c-roulette">
@@ -74,6 +77,7 @@
         </svg>
         <div class="game-icon-container">
           <svg class="game-icon-svg" viewBox="0 0 100 100">
+            <!-- icono de ruleta -->
             <circle cx="50" cy="50" r="40" />
             <circle cx="50" cy="50" r="20" />
             <line x1="50" y1="10" x2="50" y2="90" />
@@ -81,8 +85,8 @@
           </svg>
         </div>
         <div class="card-content">
-          <div class="card-title" data-i18n="lobby.roulette.title">ROULETTE</div>
-          <div class="card-desc" data-i18n="lobby.roulette.desc">Simulate the wheel with radial staggered motion.</div>
+          <div class="card-title" data-i18n="lobby.roulette.title">RULETA</div>
+          <div class="card-desc" data-i18n="lobby.roulette.desc">simula la rueda con estetica premium.</div>
         </div>
       </div>
     </a>
@@ -94,13 +98,13 @@
         </svg>
         <div class="game-icon-container">
           <svg class="game-icon-svg" viewBox="0 0 100 100">
+            <!-- icono de pica -->
             <path d="M50 20 C50 20, 80 10, 80 50 C80 80, 50 90, 50 90 C50 90, 20 80, 20 50 C20 10, 50 20, 50 20 Z" />
           </svg>
         </div>
         <div class="card-content">
           <div class="card-title" data-i18n="lobby.blackjack.title">BLACKJACK</div>
-          <div class="card-desc" data-i18n="lobby.blackjack.desc">Elastic playing card timelines and 3D transforms.
-          </div>
+          <div class="card-desc" data-i18n="lobby.blackjack.desc">cartas fisicas realistas y mesa lujosa.</div>
         </div>
       </div>
     </a>
@@ -117,8 +121,8 @@
           </svg>
         </div>
         <div class="card-content">
-          <div class="card-title" data-i18n="lobby.sports.title">SPORTS</div>
-          <div class="card-desc" data-i18n="lobby.sports.desc">Grid orchestrations and slip state updates.</div>
+          <div class="card-title" data-i18n="lobby.sports.title">DEPORTES</div>
+          <div class="card-desc" data-i18n="lobby.sports.desc">billetes de apuesta de alta gama.</div>
         </div>
       </div>
     </a>
@@ -126,14 +130,17 @@
   </div>
 
   <div class="footer-links">
-    <a href="contact.html" class="footer-link" data-i18n="footer.contact">CONTACT</a>
-    <a href="advertense.html" class="footer-link" data-i18n="footer.advertense">RESPONSIBLE GAMING</a>
+    <a href="contact.html" class="footer-link" data-i18n="footer.contact">CONTACTO</a>
+    <a href="advertense.html" class="footer-link" data-i18n="footer.advertense">JUEGO RESPONSABLE</a>
   </div>
 
-  <!-- Anime.js Integration -->
+  <!-- integracion de anime.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <!-- Languages Script -->
+  <!-- script de idiomas -->
   <script src="languages/languages.js"></script>
+  <!-- logica principal -->
+  <script src="background.js"></script>
+
 
   <script src="logic/verification.js"></script>
 
@@ -407,6 +414,7 @@
       });
     });
   </script>
+  
 </body>
 
 </html>
